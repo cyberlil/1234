@@ -56,6 +56,7 @@ namespace MathService1
             JToken jCurrent = jObject["current"];
             weatherForecast.temp_c = (string)jCurrent["temp_c"];
 
+            //Тут добавить перевод температуры в F
 
 
             return $"Страна: {weatherForecast.country}, Город: {weatherForecast.name}, Местное время: {weatherForecast.localtime}, Температура: {weatherForecast.temp_c}c";
@@ -68,6 +69,8 @@ namespace MathService1
         [WebMethod]
         public string GetWeather(string formalCityName)
         {
+            //t Запрашиваемый город
+            string t = formalCityName;
             return SearchCity.GettingListOfCitiesOnRequest(formalCityName);
         }
 

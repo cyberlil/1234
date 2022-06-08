@@ -69,8 +69,12 @@ namespace MathService1
         [WebMethod]
         public string GetWeather(string formalCityName)
         {
+<<<<<<< Updated upstream
             //t Запрашиваемый город!!
             string t = formalCityName;
+=======
+        ///////////////
+>>>>>>> Stashed changes
             return SearchCity.GettingListOfCitiesOnRequest(formalCityName);
         }
 

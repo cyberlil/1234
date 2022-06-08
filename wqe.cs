@@ -69,7 +69,7 @@ namespace MathService1
         [WebMethod]
         public string GetWeather(string formalCityName)
         {
-            //t Запрашиваемый город
+            //t Запрашиваемый город!!
             string t = formalCityName;
             return SearchCity.GettingListOfCitiesOnRequest(formalCityName);
         }
